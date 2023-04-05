@@ -27,6 +27,7 @@ main {
 #pageinfo {
     background-image: url('../assets/elipse.png');
     padding: 20px;
+    background-repeat: no-repeat;
 }
 
 #pageinfo .content p {
@@ -42,6 +43,36 @@ main {
 
 #pageinfo img {
     width: 340px;
+}
+
+#hamburger {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+#hamburger-menu {
+    position: absolute;
+    top: 58px;
+    left: 255px;
+    background-color: #CDCDCD;
+    padding: 5px 20px 5px 20px;
+}
+
+#hamburger-menu ul {
+    padding: 0px;
+    line-height: 24px;
+}
+
+
+#hamburger-menu li {
+    list-style: none;
+}
+
+#hamburger-menu li a {
+    list-style: none;
+    text-decoration: none;
+    color: #1B1D29;
 }
 
 h1 {
