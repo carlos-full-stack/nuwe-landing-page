@@ -1,3 +1,8 @@
-// const hamburger = document.getElementById('hamburger');
+const hamburger = document.getElementById('hamburger');
+const divMenu = document.getElementById('hamburger-menu');
 
-console.log('Funciona')
+hamburger.addEventListener( 'click', () => {
+
+    divMenu.classList.toggle('invisible');
+
+})
