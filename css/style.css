@@ -1,5 +1,6 @@
 body {
     background-color: #1E212E;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .topbar {
@@ -25,18 +26,21 @@ main {
 }
 
 #pageinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url('../assets/elipse.png');
     padding: 20px;
     background-repeat: no-repeat;
 }
 
 #pageinfo .content p {
+    text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
     color: #CDCDCD;
 
 }
@@ -76,12 +80,51 @@ main {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
     color: #FFFFFF;
+}
 
+.invisible {
+    display: none;
+}
+
+.greenbuttoncontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.greenbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    color: white;
+    height: 40.52054977416992px;
+    width: 176px;
+    border-radius: 5px;
+    padding: 5px 17px 5px 17px;
+    margin:auto;
+    background: linear-gradient(90deg, #6AB972 0%, #569B51 100%), #6AB972;
+}
+
+.greenbuttonshadow {
+    position: absolute;
+    top: 6px;
+    left: 70px;
+    width: 176px;
+    height: 40.52054977416992px;
+    padding: 5px 17px 5px 17px;
+    background: rgba(86, 155, 81, 0.62);
+    filter: blur(10px);
+    border-radius: 5px;
 }
