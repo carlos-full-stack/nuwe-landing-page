@@ -1,37 +1,72 @@
 body {
     background-color: #1E212E;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 375px;
     height: 50px;
+    padding: 20px;
+}
+
+#pagelinks a:hover {
+    color: #6AB972;
+}
+
+#optionlinks a:hover {
+    text-decoration: underline;
 }
 
 #pagelinks, #optionlinks {
     display: none;
+    gap: 6px;
+}
+
+#selector {
+    margin-bottom: 5px;
 }
 
 #logo {
     margin-right: 10px;
 }
 
+#entrar {
+    text-transform: uppercase;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6AB972 0%, #569B51 100%), #6AB972;
+}
+
+#registrarme {
+    text-transform: uppercase;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    border: 1px #6AB972 solid;
+}
+
 main {
-    width: 375px;
     height: 893px;
     background: #1B1D29;
 }
 
 #pageinfo {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     background-image: url('../assets/elipse.png');
-    padding: 20px;
+    padding: 55px 20px 20px 20px;
+    gap: 60px;
     background-repeat: no-repeat;
+    background-position-y: 105px;
+    background-position-x: -125px;
+}
+
+#pageinfo div {
+    flex-basis: 50%;
 }
 
 #pageinfo .content p {
@@ -45,8 +80,10 @@ main {
 
 }
 
-#pageinfo img {
-    width: 340px;
+#pageinfo .image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 #hamburger {
@@ -55,12 +92,16 @@ main {
     height: 35px;
 }
 
+#hamburger-menu-container {
+    position: relative;
+}
+
 #hamburger-menu {
     position: absolute;
-    top: 58px;
-    left: 255px;
+    top: 26px;
+    right: 0px;
     background-color: #CDCDCD;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 15px 5px 15px;
 }
 
 #hamburger-menu ul {
@@ -120,11 +161,54 @@ h1 {
 .greenbuttonshadow {
     position: absolute;
     top: 6px;
-    left: 70px;
     width: 176px;
     height: 40.52054977416992px;
     padding: 5px 17px 5px 17px;
     background: rgba(86, 155, 81, 0.62);
     filter: blur(10px);
     border-radius: 5px;
+}
+
+
+@media (min-width: 950px) {
+
+    .headersection {
+        display: flex;
+    }
+
+    #logotext {
+        display: none;
+    }
+
+    #pagelinks, #optionlinks {
+        display: flex;
+        align-items: center;
+    }
+
+    #pagelinks ul, #optionlinks ul {
+        display: inline-flex;
+        list-style: none;
+        column-gap: 30px;
+    }
+
+    #pagelinks li a, #optionlinks li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    #pageinfo {
+        flex-direction: row;
+        justify-content: center;
+        padding: 60px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .content h1, .content p {
+        text-align: left !important;
+
+    }
+
 }
