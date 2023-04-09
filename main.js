@@ -6,3 +6,5 @@ hamburger.addEventListener( 'click', () => {
     divMenu.classList.toggle('invisible');
 
 })
+
+console.log(window.document);

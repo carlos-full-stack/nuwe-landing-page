@@ -2,6 +2,7 @@ body {
     background-color: #1E212E;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    background: #14151F
 }
 
 .topbar {
@@ -10,6 +11,7 @@ body {
     align-items: center;
     height: 50px;
     padding: 20px;
+    background-color: #1E212E;
 }
 
 #pagelinks a:hover {
@@ -49,7 +51,10 @@ body {
 
 main {
     height: 893px;
-    background: #1B1D29;
+    background-image: url('../assets/elipse.png');
+    background-repeat: no-repeat;
+    background-position-y: 105px;
+    background-position-x: -125px;
 }
 
 #pageinfo {
@@ -57,12 +62,8 @@ main {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    background-image: url('../assets/elipse.png');
     padding: 55px 20px 20px 20px;
     gap: 60px;
-    background-repeat: no-repeat;
-    background-position-y: 105px;
-    background-position-x: -125px;
 }
 
 #pageinfo div {
@@ -131,6 +132,14 @@ h1 {
 
 .invisible {
     display: none;
+}
+
+#bigcodeimg {
+    display:none;
+}
+
+#codeimg {
+    display: inline;
 }
 
 .greenbuttoncontainer {
@@ -209,6 +218,25 @@ h1 {
     .content h1, .content p {
         text-align: left !important;
 
+    }
+
+    .greenbuttoncontainer {
+        justify-content: left;
+    }
+
+    #bigcodeimg {
+        position:absolute;
+        right: 0px;
+        display:inline;
+    }
+    
+    #codeimg {
+        display: none;
+    }
+
+    main {
+        background-position-y: 25px;
+        background-position-x: 675px;
     }
 
 }
