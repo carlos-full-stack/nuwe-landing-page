@@ -178,6 +178,10 @@ h1 {
     border-radius: 5px;
 }
 
+.stars {
+    display: none;
+}
+
 
 @media (min-width: 950px) {
 
@@ -208,7 +212,7 @@ h1 {
     #pageinfo {
         flex-direction: row;
         justify-content: center;
-        padding: 60px;
+        padding: 100px 60px 60px 60px;
     }
 
     #hamburger {
@@ -235,8 +239,71 @@ h1 {
     }
 
     main {
-        background-position-y: 25px;
-        background-position-x: 675px;
+        background-size: 472px 469px;
+        background-position-y: 46px;
+        background-position-x: 711px;
+    }
+
+    .stars {
+        display: inline;
+    }
+
+    #star1 {
+        position: absolute;
+        top: 136px;
+        right: 345px;
+    }
+
+    #star2 {
+        position: absolute;
+        top: 162px;
+        right: 500px;
+    }
+
+    #star3 {
+        position: absolute;
+        top: 121px;
+        right: 448px;
+    }
+
+    #star4 {
+        position: absolute;
+        right: 446px;
+        top: 210px;
+    }
+
+    #star5 {
+        position: absolute;
+        top: 136px;
+        right: 390px;
+    }
+
+
+    #star6 {
+        position: absolute;
+        top: 610px;
+        right: 116px;
+    }
+
+    #star7 {
+        position: absolute;
+        top: 543px;
+        right: 115px;
+    
+    }
+
+    #star8 {
+        position: absolute;
+        top: 565px;
+        right: 169px;
+    
+    }
+
+    #star9 {
+        position: absolute;
+        top: 548px;
+        right: 0px;
+    
     }
 
 }
