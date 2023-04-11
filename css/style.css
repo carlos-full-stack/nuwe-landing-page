@@ -155,7 +155,20 @@ h1 {
 }
 
 #codeimg {
-    display: inline;
+    display:inline;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-top: -25%;
+      opacity: 0.1;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
 }
 
 .greenbuttoncontainer {
@@ -248,7 +261,21 @@ h1 {
         position:absolute;
         right: 0px;
         display:inline;
+        animation-duration: 0.5s;
+        animation-name: slidein;
     }
+
+    @keyframes slidein {
+        from {
+          margin-right: -50%;
+          opacity: 0.1;
+        }
+      
+        to {
+          margin-right: 0%;
+        }
+    }
+    
     
     #codeimg {
         display: none;
