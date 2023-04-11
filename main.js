@@ -7,4 +7,12 @@ hamburger.addEventListener( 'click', () => {
 
 })
 
-console.log(window.document);
+
+window.addEventListener('resize', () => {
+
+    const windowWidth = window.innerWidth;
+
+    if(windowWidth >= 950 && !divMenu.classList.contains('invisible') ) {
+       divMenu.classList.toggle('invisible');
+    }
+} )
