@@ -103,7 +103,23 @@ main {
     right: 0px;
     background-color: #CDCDCD;
     padding: 5px 15px 5px 15px;
+    animation-duration: 0.2s;
+    animation-name: slidein;
 }
+
+
+@keyframes slidein {
+    from {
+      margin-top: -50%;
+      opacity: 0.1;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
+}
+
+
 
 #hamburger-menu ul {
     padding: 0px;
