@@ -321,7 +321,6 @@ h1 {
         right: 390px;
     }
 
-
     #star6 {
         position: absolute;
         top: 610px;
@@ -348,5 +347,66 @@ h1 {
         right: 0px;
     
     }
+
+    /* Animations */
+
+    #star5, #star9 {
+        animation: fade 5s infinite 3s ;
+
+    } 
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+}
+
+
+#star1, #star2, #star8 {
+    animation: fade 5s infinite 2s ;
+
+} 
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#star3, #star4, #star6, #star7 {
+    animation: fade 5s infinite 4s ;
+
+} 
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 }
